@@ -1,4 +1,39 @@
+title: TAYLEX
+
+email: hello@taylex.com
+
+description: >-
+  A small business technology solutions provider.
+
 url: "https://www.taylex.com"
-title: "Taylex Professional Services LLC"
+
+twitter_username: taylex
+facebook_username: taylex
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+  
+include:
+  - _pages
+   
 exclude:
+  - Gemfile
+  - Gemfile.lock
   - docker-compose.yml
+  - README.md
+  - dist
+  - node_modules
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+
+header_pages:
+ - index.html
+ - _pages/about.html
+ - _pages/services.html
+ - _pages/contact.html
+ - _pages/blog.html
+
+sass:
+  style: compressed
